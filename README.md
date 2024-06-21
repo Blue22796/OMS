@@ -77,4 +77,6 @@ Prisma ORM is used to define and manage these entities in PostgreSQL.
 ### Coupons:
 - **Apply Discount/Coupon to Order:**
   - `POST /api/orders/apply-coupon`
+
+
 This README provides a comprehensive guide to setting up, running, and understanding the Order Management System implemented for the e-commerce mobile app backend. For any questions or issues, please refer to the documentation or contact the project team.
