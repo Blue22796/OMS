@@ -21,8 +21,6 @@ export class OrderService{
              cartId : cartId,
             total : cart.total}
         })
-        cart.orderId = order.orderId
-        await this.prisma.cart.update({where : {cartId : cart.cartId}, data : {orderId : order.orderId}})
         return "Ordered successfully"
     }
 

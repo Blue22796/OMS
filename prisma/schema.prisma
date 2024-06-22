@@ -40,7 +40,7 @@ model Order {
   user      User      @relation(fields: [userId], references: [userId])
   userId    Int
   cart      Cart      @relation(fields : [cartId], references : [cartId])
-  cartId    Int       @unique
+  cartId    Int       
   total     Float     @default(0)
 }
 
@@ -48,8 +48,7 @@ model Cart {
   cartId     Int       @id @default(autoincrement())
   user       User      @relation(fields: [userId], references: [userId])
   userId     Int
-  order      Order?    
-  orderId    Int?       @unique
+  order      Order[]
   cartItems  CartItem[]
   total      Float      @default(0)
 }
